@@ -3,7 +3,6 @@
 body{
     display: flex;
     justify-content: center;
-    height: 3000px;
     scroll-behavior: smooth;
     background-color: rgb(0, 0, 0);
 }
@@ -562,3 +561,4 @@ body{
 .languageIcon{
     width: 60px;
 }
+
