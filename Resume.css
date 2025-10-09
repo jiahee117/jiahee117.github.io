@@ -1,0 +1,564 @@
+
+
+body{
+    display: flex;
+    justify-content: center;
+    height: 3000px;
+    scroll-behavior: smooth;
+    background-color: rgb(0, 0, 0);
+}
+
+
+.header{
+    background-color: rgba(255, 236, 29, 0.4);
+    height: 70px;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+
+}
+
+
+
+.logoSection{
+    margin-left: 10px;
+    display: flex;
+    color: rgb(7, 7, 7);
+    flex: 2;
+    
+    
+}
+.logo{
+    
+    display: flex;
+    align-items: center;
+}
+
+.logoIcon{
+    fill: white;
+    margin-left: 10px;
+    height: 55px;
+    width: 50px;
+    align-items: center;
+}
+
+.logoText{
+    align-items: center;
+    
+    font-size: 24px;
+    font-weight: 900;
+    
+}
+
+.menuSection{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.menuSectionIcon{
+    width: 40px;
+    align-items: center;
+}
+
+.content{
+    width: 800px;
+}
+
+.firstSection{
+    background-color: rgba(242, 204, 194,0.5);
+}
+
+
+
+.test{
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    justify-content: center;
+    margin-top: -70px;
+
+    background-image:url('Image/fstSection/ProfileBackground.jpg'); 
+    background-size: cover;
+}
+
+@media (max-width: 600px) {
+  .test {
+    grid-template-columns: 1fr; /* 1 column */
+    grid-template-rows: auto auto; /* stack rows */
+    justify-content: center;
+  }
+
+  .header{
+    position: fixed;
+    top: 0;
+  }
+
+  .summary{
+    font-size: 10px !important;;
+    max-width: 200px !important;;
+    }
+
+  .content{
+    width: 100%;
+    }
+    .textStyle{
+        font-size: 12px;
+    }   
+    .textStyle1{
+        font-size: 12px;
+    }
+    .textStyle2{
+        font-size: 12px;
+    }
+    .progressbar{
+    width: 50% !important;
+    }
+
+    .tagText{
+    font-size: 21px;
+    
+    }
+
+    .line2{
+        width: 100% !important;
+    }
+
+    .profilePic{
+        
+        margin: auto;
+        width: 400px;
+        height: 300px;
+    }
+
+    .overlay{
+        width: 100% !important;
+    }
+
+    .infoLayout{
+        margin-top: 0px !important;
+    }
+    .infoLayout1{
+        margin-top: 0px !important;
+    }
+}
+
+
+
+.infoLayout{
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 200px 1fr;
+    color: aliceblue;
+    margin-top: 60px;
+}
+
+.infoLayout1{
+    margin-top: 50px;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 50px 25px 25px;
+    font-size: 16px;
+    border-style: solid;
+    width: 300px;
+    border-radius: 40px;
+}
+
+.infoLayout2{
+    display: grid;
+    justify-content: center;
+
+    margin-top: 40px;
+    margin-right: 20px;
+
+    grid-template-rows: 50px 1fr;
+    font-size: 20px;
+}
+
+
+.profilePic{
+    margin-top: 50px; 
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+.overlay {
+  position: absolute;
+  
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(red, green, blue, 0);
+  overflow: hidden;
+  width: 0;
+  height: 96%;
+  transition: 0.5s ease;
+}
+
+
+.firstSection:hover .overlay{
+    width: 100%;
+}
+
+.secondSection:hover ~ .overlay {
+  background: rgba(0, 0, 255, 0.5);
+  width: 100%;
+}
+
+.profilePicAT{
+    
+    width: 100%;
+}
+
+.infoLine1{
+     display: grid;
+     grid-template-columns: 50px 1fr;
+}
+
+.infoLine2{
+     display: flex;
+     font-size: 12px;
+    justify-content: space-between;
+}
+
+.infoLine3{
+    display: flex;
+     font-size: 12px;
+    justify-content: space-between;
+}
+
+.infoAttribute{
+  display: flex;
+  align-items: center;
+  height: 55px;
+  margin-right: 11px;
+}
+
+.secondSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('Image/secSection/background.svg');
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.summary{
+    flex: 1;
+    margin: 0 0 0 0;
+    font-size: 20px;
+    max-width: 500px;
+    min-width: 200px;
+
+    text-align: justify;
+    line-height: 150%;
+}
+
+.thirdSection{
+    background-image: url('Image/thirdSection/thirdSecBackground.jpg');
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 0.2fr 0.8fr;
+}
+
+.tagContainer{
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    
+    
+}
+
+.tagContainer-left{
+    display: flex;
+    justify-content: left;
+    text-align: right;
+    
+    
+}
+.tagContainer-mid{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+    
+}
+
+.tag{
+    
+    display: flex;
+    margin-top: 50px;
+    background-color: yellow;
+    
+
+    font-size: 30px;
+    font-weight: 700;
+
+    padding-left: 20px;
+    padding-right: 40px;
+    
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.tag-left{
+    display: flex;
+    margin-top: 50px;
+    background-color: yellow;
+    
+
+    font-size: 30px;
+    font-weight: 700;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.tag-mid{
+    display: flex;
+    margin-top: 50px;
+    color: aliceblue;
+
+    font-size: 30px;
+    font-weight: 700;
+
+    padding-left: 20px;
+    padding-right: 40px;
+    
+}
+
+.tagImage{
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.tagText{
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.nodeLayout{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 10px 1fr;
+}
+
+.leftNode{
+    width: 100%;
+    margin-top: 10px;
+    display: grid;
+    grid-template-rows: 100px 100px 100px 100px;
+    justify-content: right;
+}
+
+.textStyle{
+    text-align: right;
+    color: aliceblue;
+}
+
+
+.rightNode{
+    width: 100%;
+    margin-top: 10px;
+    display: grid;
+    grid-template-rows: 100px 100px 100px 100px;
+    justify-content: left;
+}
+
+.node{
+    margin: 0 auto;
+    height: 10px;
+    width: 10px;
+    
+    background-color: aliceblue;
+    border-radius: 3px;
+   
+}
+
+.node1{
+    margin: 0px;
+    height: 7px;
+    width: 7px;
+    
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-radius: 3px;
+   
+}
+.line{
+    margin: 0 auto;
+    width: 3px;
+    height: 97%;
+    background-color: aliceblue;
+    
+}
+
+.leftLine{
+    margin-right: -4px;
+    height: 2px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+
+.line1{
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    height: 2px;
+    background-color: aliceblue;
+    
+}
+
+.rightLine{
+    margin-left: -4px;
+    height: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.textStyle1{
+    text-align: left;
+    color: aliceblue;
+}
+
+.fourthSection{
+    background-image: url('Image/frSection/frSecBackground.png');
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 0.2fr 0.8fr;
+}
+
+.nodeLayout1{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.midLine1{
+    margin-left: 30px;
+}
+
+.rightNode1{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.line2{
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 500px;
+    height: 3px;
+    background-color: aliceblue;
+    
+}
+
+.textStyle2{
+    text-align: left;
+    color: aliceblue;
+}
+
+.informationContainer2{
+    flex: 1;
+    overflow-wrap: break-word;
+}
+.informationContainer1{
+    flex: 1;
+}
+
+.fifthSection{
+    display: grid;
+    grid-template-rows: 0.2fr 0.8fr;
+}
+
+.layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.leftSec{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+.softwareSkillSec{
+    display: flex;
+    flex-direction: column;
+}
+
+.softwareSkilltitle{
+    flex: 0.2;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    width: 150px;
+    text-align: center;
+    color: aliceblue;
+    background-color: rgb(240, 103, 126);
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+
+}
+
+.softwareSkillAtt{
+    
+    display: flex;
+    align-items: center;
+}
+
+.progressbar{
+    background-color: azure;
+    width: 250px;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.progress{
+    height: 20px;
+    background-color: rgb(255, 239, 60);
+    border-radius: 10px;
+}
+
+.programmingSkillSec{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.programmingSkilltitle{
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-bottom: 20px;    
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(99, 52, 254);
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+
+}
+
+.languageIcon{
+    width: 60px;
+}
